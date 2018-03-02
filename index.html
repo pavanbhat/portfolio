@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pavan Bhat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome  -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Tiny Slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
+</head>
+
+<body>
+  <header id="showcase">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgba(0,0,0,0.4)">
+      <div class="container-fluid">
+        <div class="navbar-header float-right">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span class="glyphicon glyphicon-ruble"></span>
+            <span class="glyphicon glyphicon-bold"></span>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="navigate" class="nav navbar-nav" style="padding-left: 37%;">
+            <li class="active">
+              <a id="home-nav" href="#home">Home</a>
+            </li>
+            <li>
+              <a id="about-nav" href="#about">About</a>
+            </li>
+            <li>
+              <a id="projects-nav" href="#section-a">Portfolio</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Activities
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Projects</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- Navbar ends here -->
+
+    <div class="box">
+      <img src="images/dp.jpg" alt="Display Pic" class="box-img" img-responsive />
+      <h1>Pavan Bhat</h1>
+      <a href="" class="typewrite" data-period="2000" data-type='[ "Hello World!", "I am a Full Stack Developer.", "I am Creative.", "I Love -->", "to Develop.", "solving real world problems."]'>
+        <span class="wrap"></span>
+      </a>
+      <div id="modalBtns">
+        <button id="modalBtn1" href="#" class="btn btn-success z-depth-5" data-toggle="modal" data-target="#simpleModal2">
+          <i class="fa fa-paper-plane"></i> Hire Me</button>&nbsp;&nbsp;&nbsp;
+        <button id="modalBtn" href="#" class="btn btn-info z-depth-5" data-toggle="modal" data-target="#simpleModal">
+          <i class="glyphicon glyphicon-download-alt"></i> Resume</button>
+      </div>
+      <br />
+      <br />
+      <button class="next btn btn-primary btn-lg z-depth-5" style="border-radius:50%;">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div id="simpleModal" class="modal fadeIn" tabindex="-1" role="dialog">
+      <div class="modal-content" role="document">
+        <span class="closeBtn">
+          &times;
+        </span>
+        <img src="images/resume.jpg" alt="Resume" class="img-responsive " />
+      </div>
+    </div>
+
+    <div id="simpleModal2" class="modal fadeIn well well-sm" tabindex="-1" role="dialog">
+      <div class="modal-content" role="form">
+        <span class="closeBtn2">
+          &times;
+        </span>
+        <form>
+          <div class="row" style="margin-top:45px;">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="name">
+                  Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+              </div>
+              <div class="form-group">
+                <label for="email">
+                  Email Address</label>
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                  </span>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">
+                  Subject</label>
+                <select id="subject" name="subject" class="form-control" required="required">
+                  <option value="na" selected="">Choose One:</option>
+                  <option value="service">General Customer Service</option>
+                  <option value="suggestions">Suggestions</option>
+                  <option value="product">Product Support</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div style="padding-right: 20px;" class="form-group">
+                <label for="name">
+                  Message</label>
+                <textarea name="message" id="message" class="form-control" rows="9" cols="25" style="padding-right:40px;" required="required"
+                  placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div style="padding-right: 40px;" class="col-sm-12">
+              <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+
+    <div id="behind" class="container">
+      <div id="particles-js">
+
+      </div>
+    </div>
+  </header>
+
+
+  <div id="section-a">
+    <h1 style="padding:40px;">Projects</h1>
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Projects Section -->
+        <div id="projects" class="container">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="thumbnail" style='background-color: transparent'>
+                  <div class="caption">
+                    <h4>Thumbnail Headline</h4>
+                    <p>short thumbnail description</p>
+                    <p>
+                      <a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+                      <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                    </p>
+                  </div>
+                  <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                </div>
+              </div>
+              <div class="item">
+                <div class="thumbnail" style='background-color: transparent'>
+                  <div class="caption">
+                    <h4>Thumbnail Headline</h4>
+                    <p>short thumbnail description</p>
+                    <p>
+                      <a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+                      <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                    </p>
+                  </div>
+                  <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                </div>
+              </div>
+              <div class="item">
+                <div class="thumbnail" style='background-color: transparent'>
+                  <div class="caption">
+                    <h4>Thumbnail Headline</h4>
+                    <p>short thumbnail description</p>
+                    <p>
+                      <a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+                      <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                    </p>
+                  </div>
+                  <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                </div>
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+  </div>
+
+  <section id="section-b">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis molestiae, sit. Dicta ratione, facere ut iste incidunt
+      nobis vero, distinctio doloremque sapiente delectus molestiae odit non, omnis expedita. Est consequuntur totam obcaecati,
+      distinctio repellendus necessitatibus veritatis nesciunt quia eos alias eligendi voluptatem doloribus quibusdam quisquam
+      quos ex ipsa ratione assumenda error dolorum, quas minima amet libero voluptatibus? Ipsam vitae labore inventore dolorem
+      ab laborum, dolore quos maxime non quae, repellendus eos facere facilis veniam temporibus. Quis facilis natus inventore,
+      incidunt eum ipsum repudiandae iusto. Necessitatibus sit odio, error id dolorum possimus veritatis, aspernatur obcaecati
+      fugiat at ipsa amet eligendi illum?
+    </p>
+  </section>
+
+  <section id="section-c">
+    <div class="box-1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque officia quos assumenda repellat, atque nihil.
+    </div>
+    <div class="box-2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque officia quos assumenda repellat, atque nihil.
+    </div>
+    <div class="box-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque officia quos assumenda repellat, atque nihil.
+    </div>
+  </section>
+
+  <!-- Social Section -->
+  <div class="socialFooter">
+    <div class="container">
+      <a href='https://github.com/pavanbhat'>
+        <i class="fa fa-github fa-3x fa-fw"></i>
+      </a>
+      <a href='https://www.facebook.com/pdvbhat'>
+        <i class="fa fa-facebook fa-3x fa-fw"></i>
+      </a>
+      <a href='https://twitter.com/bhat_pavan'>
+        <i class="fa fa-twitter fa-3x fa-fw"></i>
+      </a>
+      <a href='https://www.youtube.com/channel/UCH7xSnimh4nUdrg4a8HTezg?view_as=subscriber'>
+        <i class="fa fa-youtube-play fa-3x fa-fw"></i>
+      </a>
+      <a href='#'>
+        <i class="fa fa-rss fa-3x fa-fw"></i>
+      </a>
+      <a href='https://www.freecodecamp.org/pavanbhat'>
+        <i class="fa fa-free-code-camp fa-3x fa-fw"></i>
+      </a>
+      <a href='https://aboutme.google.com/u/0/?referer=gplus'>
+        <i class="fa fa-google-plus fa-3x fa-fw"></i>
+      </a>
+      <a href='https://www.linkedin.com/in/pavanbhat/'>
+        <i class="fa fa-linkedin fa-3x fa-fw"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>
+        <a href="http://www.pawanbhat.com/" rel="author">Pavan Bhat</a>. Used
+        <a href="http://twitter.github.com/bootstrap/" rel="external">Twitter Bootstrap</a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+
+  <script type="text/javascript" src="/js/particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('particles.json loaded');
+    });
+  </script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
+</body>
+
+</html>
